@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.weidu.salebook" >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".UsedBooks"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".bookdetail0"
+            android:label="@string/title_activity_bookdetail0"
+            android:parentActivityName=".UsedBooks" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.weidu.salebook.UsedBooks" />
+        </activity>
+        <activity
+            android:name=".bookdetail1"
+            android:label="@string/title_activity_bookdetail1" >
+        </activity>
+        <activity
+            android:name=".bookdetail2"
+            android:label="@string/title_activity_bookdetail2" >
+        </activity>
+    </application>
+
+</manifest>

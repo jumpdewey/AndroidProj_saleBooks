@@ -1,0 +1,152 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.weidu.salebook.bookdetail2Fragment"
+    android:id="@+id/bookdetail2">
+
+
+
+        <ImageView
+            android:layout_width="195dp"
+            android:layout_height="195dp"
+            android:id="@+id/imageView3"
+            android:src="@drawable/book2"
+            android:layout_marginTop="10dp"
+            android:background="#FFFFFF"
+            android:clickable="true"
+            android:layout_below="@+id/booktitle2"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="A Farewell To Arms"
+            android:id="@+id/booktitle2"
+            android:gravity="left"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:textColor="#9400D3"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Author:"
+            android:id="@+id/textView2"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:layout_below="@+id/imageView3"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hemingway"
+            android:id="@+id/author20"
+            android:textSize="15sp"
+            android:textStyle="italic"
+            android:layout_alignTop="@+id/textView2"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Description:"
+            android:id="@+id/textView4"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:layout_below="@+id/textView2"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="The book, published in 1929, is a first-person account of American Frederic Henry, serving as a Lieutenant (&quot;Tenente&quot;) in the ambulance corps of the Italian Army. The title is taken from a poem by 16th-century English dramatist George Peele."
+            android:id="@+id/description20"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/textView4"
+            android:layout_centerHorizontal="true"
+            android:gravity="left" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="bottom"
+            android:layout_below="@+id/price2"
+            android:layout_marginTop="15dp">
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="I Like :-)"
+                android:id="@+id/button20"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_weight="1"
+                android:textColor="#F7F7F7"
+                android:background="#FF1493" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="BACK"
+                android:id="@+id/button21"
+                android:layout_alignParentBottom="true"
+                android:layout_toRightOf="@+id/button20"
+                android:layout_toEndOf="@+id/button20"
+                android:layout_weight="1"
+                android:background="#912CEE"
+                android:textColor="#BFEFFF" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="I Dislike ;-("
+                android:id="@+id/button22"
+                android:layout_alignBottom="@+id/button21"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_weight="1"
+                android:textColor="#D4D4D4"
+                android:background="#B03060"
+                android:layout_marginTop="0dp" />
+        </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Price:"
+        android:id="@+id/price2"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:layout_below="@+id/description20"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="$27"
+        android:id="@+id/price20"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:layout_below="@+id/description20"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="10dp" />
+
+</RelativeLayout>

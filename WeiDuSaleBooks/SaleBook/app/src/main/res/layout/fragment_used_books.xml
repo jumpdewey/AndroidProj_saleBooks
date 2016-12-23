@@ -1,0 +1,151 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    android:paddingBottom="16dp"
+    tools:context=".UsedBooksFragment">
+
+    <TextView android:text="Books For Sale" android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/title"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:gravity="center_horizontal"
+        android:textColor="#FF3030" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:text="War and Peace"
+        android:id="@+id/book0"
+        android:layout_below="@+id/title"
+        android:layout_marginTop="75dp"
+        android:gravity="left" />
+
+    <ImageView
+        android:layout_width="145dp"
+        android:layout_height="145dp"
+        android:id="@+id/image0"
+        android:layout_below="@+id/title"
+        android:layout_toRightOf="@+id/book0"
+        android:layout_toEndOf="@+id/book0"
+        android:src="@drawable/book0"
+        android:layout_marginTop="10dp"
+        android:background="#FFFFFF"
+        android:layout_centerHorizontal="true"
+        android:clickable="true"
+        android:layout_marginLeft="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="The Red And The Black"
+        android:id="@+id/book1"
+        android:layout_below="@+id/image0"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@+id/image0"
+        android:layout_marginTop="60dp"
+        android:layout_alignRight="@+id/booktitle2"
+        android:layout_alignEnd="@+id/booktitle2" />
+
+    <ImageView
+        android:layout_width="145dp"
+        android:layout_height="145dp"
+        android:id="@+id/image1"
+        android:layout_below="@+id/image0"
+        android:layout_toRightOf="@+id/book1"
+        android:layout_toEndOf="@+id/book1"
+        android:src="@drawable/book1"
+        android:layout_alignLeft="@+id/image0"
+        android:clickable="true"
+        android:layout_marginLeft="0dp" />
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:id="@+id/good0"
+        android:src="@drawable/ic_action_good"
+        android:visibility="invisible"
+        android:layout_alignTop="@+id/book0"
+        android:layout_alignLeft="@+id/good1"
+        android:layout_alignStart="@+id/good1"
+        android:layout_marginLeft="0dp" />
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:id="@+id/good1"
+        android:src="@drawable/ic_action_good"
+        android:visibility="invisible"
+        android:layout_alignTop="@+id/book1"
+        android:layout_toRightOf="@+id/image1"
+        android:layout_toEndOf="@+id/image1"
+        android:layout_marginLeft="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="A Farewell To Arms"
+        android:id="@+id/booktitle2"
+        android:layout_below="@+id/image1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/book0"
+        android:layout_alignEnd="@+id/book0"
+        android:layout_marginTop="60dp" />
+
+    <ImageView
+        android:layout_width="145dp"
+        android:layout_height="145dp"
+        android:id="@+id/image2"
+        android:src="@drawable/book2"
+        android:layout_below="@+id/image1"
+        android:layout_alignLeft="@+id/image1"
+        android:layout_alignStart="@+id/image1"
+        android:clickable="true" />
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:id="@+id/good2"
+        android:src="@drawable/ic_action_good"
+        android:visibility="invisible"
+        android:layout_alignTop="@+id/booktitle2"
+        android:layout_alignLeft="@+id/good1"
+        android:layout_alignStart="@+id/good1"
+        android:layout_marginLeft="0dp" />
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:id="@+id/bad0"
+        android:src="@drawable/bad"
+        android:visibility="invisible"
+        android:layout_alignTop="@+id/good0"
+        android:layout_toRightOf="@+id/good0"
+        android:layout_toEndOf="@+id/good0" />
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:id="@+id/bad1"
+        android:src="@drawable/bad"
+        android:visibility="invisible"
+        android:layout_alignTop="@+id/good1"
+        android:layout_toRightOf="@+id/good1"
+        android:layout_toEndOf="@+id/good1" />
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:id="@+id/bad2"
+        android:src="@drawable/bad"
+        android:visibility="invisible"
+        android:layout_alignTop="@+id/good2"
+        android:layout_toRightOf="@+id/good2"
+        android:layout_toEndOf="@+id/good2" />
+
+</RelativeLayout>
